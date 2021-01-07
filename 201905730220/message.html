@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>意见反馈</title>
+<link rel="stylesheet" href="css/messagecss.css">
+<link rel="icon" href="images/icon.ico" type="image/x-icon">
+  
+</head>
+<body>
+<div class="title">
+<div class="laymid">
+<div class="logo2"></div>
+<div class="logo1">
+</div>
+<div class="mainMenu">
+<ul>
+  <li class="channel"><a class="channel-a" href="index.html">首页</a></li>
+  <li class="channel"><a class="channel-a" href="about.html">心得体会</a>
+
+  </li>
+  <li class="channel on"><a class="channel-a" href="message.html">留言</a></li>
+  
+</ul>
+</div>
+</div>
+</div>
+
+<div class="area">
+<div class="title-text">留言表</div>
+<div class="tablearea">
+<form action="index.html">
+<fieldset>
+<legend>请输入您的个人信息以及留言内容</legend>
+<table>
+<tr>
+<td>昵称：</td>
+<td><input type="text" name="text" id="text" required="required">
+</td>
+</tr>
+
+<tr>
+<td>性别：</td>
+<td><input type="radio" name="gender" id="check" required="required">男
+<input type="radio" name="gender" id="check" required="required">女</td>
+</tr>
+
+<tr>
+<td>联系电话：</td>
+<td><input type="text" id="num" maxlength="11" minlength="11" name="num" oninput="value=value.replace(/[^\d]/g,'')" required="required"></td>
+</tr>
+
+<tr>
+<td>您的职业：</td>
+<td><select name="select" id="select" required="required">
+<option></option>
+<option>学生</option>
+<option>教师</option>
+<option>医生</option>
+<option>公务员</option>
+<option>普通上班族</option>
+<option>自由工作者</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>留言内容：</td>
+<td><textarea cols="50" rows="10" style="resize:none;font-size: 18px;" id="textarea" required="required">
+</textarea>
+</td>
+</tr>
+<div class="login">
+<button type="submit" value="提交">提交</button>
+</div>
+</table>
+</fieldset>
+</form>
+</div>
+</div>
+
+<div class="bottomtext">
+<span>制作人：张锐俊</span><br>
+<span>学院专业：外语外贸学院19级电子商务</span><br>
+<span>指导老师：陈森玲</span><br>
+<span>地址：广东省外语艺术职业学院五山校区</span><br>
+<span>联系方式：电话：13106956100 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;邮箱：986840756@qq.com</span>
+</div>
+
+
+
+
+
+</body>
+<script type="text/javascript">
+    var text=document.getElementById('text');
+	var check=document.getElementById('check');
+	var num=document.getElementById('num');
+	var textarea=document.getElementById('textarea');
+	var select=document.getElementById('select');
+
+text.oninvalid=function(){
+	var v = text.validity;
+	if(true === v.valueMissing){
+		this.setCustomValidity("请输入您的姓名");
+	}
+	else{
+		this.setCustomValidity("");
+
+	}
+}
+
+check.oninvalid=function(){
+	var v = check.validity;
+	if(true === v.valueMissing){
+		this.setCustomValidity("请输入您的性别");
+	}
+	else{
+		this.setCustomValidity("");
+
+	}
+}
+
+num.oninvalid=function(){
+	var v = num.validity;
+	if(true === v.valueMissing){
+		this.setCustomValidity("请输入您的手机号码");
+	}
+	else{
+		this.setCustomValidity("");
+
+	}
+}
+
+check.oninvalid=function(){
+	var v = check.validity;
+	if(true === v.valueMissing){
+		this.setCustomValidity("请选择您的性别");
+	}
+	else{
+		this.setCustomValidity("");
+
+	}
+}
+
+textarea.oninvalid=function(){
+	var v = textarea.validity;
+	if(true === v.valueMissing){
+		this.setCustomValidity("请输入您要留言的内容哦");
+	}
+	else{
+		this.setCustomValidity("");
+
+	}
+}
+
+select.oninvalid=function(){
+	var v = select.validity;
+	if(true === v.valueMissing){
+		this.setCustomValidity("请选择您的职业");
+	}
+	else{
+		this.setCustomValidity("");
+
+	}
+}
+
+
+
+</script>
+</html>

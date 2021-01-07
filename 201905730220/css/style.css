@@ -1,0 +1,60 @@
+@charset "utf-8" body {}
+
+.navbar .container{
+    text-align: center;
+}
+
+.nav-pills li a {
+    font-size: 18px;
+    font-family: "黑体";
+    text-align: center;
+    color: #000;
+}
+
+.nav li.active a,.nav li a:hover {
+    background: #000;
+    color: #fff;
+}
+
+.carousel-control {
+    font-size: 100px;
+}
+
+.carousel-indicators {
+    position: absolute;
+}
+
+.content {
+    text-align: center;
+    padding: 0;
+}
+
+h2 {
+    line-height: 70px;
+    font-weight: bolder;
+    background-image: url(../images/separator.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    margin-bottom: -5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.content-inner {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.picture {
+    margin-top: 50px;
+}
+
+.activity {}
+.snsicon{
+height: 80px;
+}
+footer{
+    text-align: center;
+}
